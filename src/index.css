@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,500&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --color-bg: #ffffff;
+    --color-bg-var: #1956e7;
+    --color-primary: #0a42de;
+    --color-primary-var: #0434b9;
+    --color-primary-var-2: #212020;
+    --color-white: #fff;
+    --color-dark: #525252;
+    --color-darker: #1a1a1a;
+    --color-light: #e9e7e7;
+    --cut-container-width-lg: 94%;
+    --container-width-lg: 90%;
+    --container-width-md: 93%;
+    --container-width-ms: 97%;
+
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-dark);
+    line-height: 1.7;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+a {
+    color: var(--color-white);
+    transition: var(--transition);
+    width: max-content;
+}
+
+.color-dark {
+    color: #1a1919;
+}
+.none {
+    display: none;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+/* ==========================Media queries small devices====================== */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-ms);
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+

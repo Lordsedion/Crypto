@@ -1,0 +1,128 @@
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow:  0px 0px 6px #d6cfcf,
+             0px 0px 10px #ffffff;
+    justify-content:flex-start;
+    flex-direction: row;
+    z-index: 99;
+}
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.3rem 1rem;
+}
+nav .left {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+nav .left img {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+nav .left form .input {
+    width: 22rem;
+     padding: 0 0.1rem;
+    border-radius: 0.5rem;
+    margin: 0 0 0 1.5rem;
+    font-size: 0.9rem;
+    background: #fff;
+    border: 2.2px solid #b0b0b052;
+}
+nav .left form input {
+    margin-left: 1rem;
+    width: 90%;
+    padding: 0.75rem ;
+    margin: 0;
+    font-size: 0.9rem;
+}
+nav .left form .input .input-search {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    vertical-align: -18%;
+    color: #343434d1;
+}
+
+nav .right {
+    display: flex;
+    justify-content: right;
+    width: 60%;
+    align-items: center;
+}
+nav .right .menu-nav{
+    display: flex;
+}
+nav .right .menu-nav .item {
+    padding: 1rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav .icons-right {
+    display: flex;
+}
+nav .icons-right .r-icons {
+    font-size: 1.7rem;
+    margin: 0 1rem ;
+    color: #343434d1;
+}
+.hamburger {
+    display: none;
+} 
+#mb-search {
+    display: none;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    nav.icons-right .r-icons {
+        font-size: 1.7rem;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1200px) {
+    nav .right .menu-nav {
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav .icons-right {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    nav .left {
+        width: 70%;
+    }
+    nav .right {
+        width: 30%;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 768px) {
+   .tb-c {
+    display: none;
+   }
+   nav .left img {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+   .nav-container {
+    padding: 0.3rem;
+}
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 600px) {
+   .input {
+    display: none;
+   }
+   #mb-search {
+    display: block;
+   }
+   .icons-right .r-icons {
+    margin: 0 0.4rem;
+   }
+}

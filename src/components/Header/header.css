@@ -1,0 +1,236 @@
+.cut-container {
+    width: var(--cut-container-width-lg);
+    margin: 0 auto;
+}
+.header-container{
+    background-image: linear-gradient(to right, rgb(224, 240, 255) , rgb(139, 189, 255));
+    padding: 3rem 4rem 3rem 0;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 3rem;
+}
+header .left {
+    width: 60%;
+    margin-top: 5rem;
+    
+}
+header .left .main-w {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.7rem;
+    color: var(--color-darker);
+}
+header .left .sub-w {
+    margin-top: 2rem;
+    font-size: 1.67rem;
+    width: 80%;
+    font-weight: 500;
+}
+header .left .explore {
+    background: var(--color-primary);
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    margin-top: 2.7rem;
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.6rem 2rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+header .left .create {
+    background: #fff;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    margin-top: 2.7rem;
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    padding: 0.6rem 2rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+header .left .explore:hover {
+    background: var(--color-primary-var);
+}
+header .right {
+    margin-top: 2rem;
+    width: 38%;
+    text-align: right;
+}
+header .right .image-container {
+    position: relative;
+}
+header .right .image-container .info-container .user-det {
+    display: flex;
+    background: rgb(255, 255, 255);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    height: 5rem;
+    padding: 0.3rem 1rem;
+    width: 96%;
+    position: absolute;
+    bottom: 0%;
+    margin-left: 4%;
+    box-shadow:  0px 0px 6px #d6cfcf,
+             0px 0px 10px #ffffff;
+}
+header .right .image-container .info-container .user-det img{
+    width: 4rem;
+    height  : 4rem;
+    margin: auto 0;
+}
+header .right .image-container .info-container .user-det .username{
+    margin: 0 0.8rem auto 0.8rem;
+    text-align: left;
+    color: var(--color-darker);
+}
+header .right .image-container .info-container .user-det .caption{
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0 0.8rem auto 0.8rem;
+    height: 2rem;
+    overflow: hidden;
+    color: var(--color-darker);
+}
+header .right .image-container .header-main-img {
+    max-width: 96%;
+    z-index: 1;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+#mobile-menu {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    padding: 2rem 0.7rem;
+    z-index: 10;
+    background: #fff;
+    margin-bottom: 100vh;
+    margin-top: -1rem;
+    width: 100vw;
+}
+.m-up > div {
+    width: 96%;
+    margin: 0.5rem auto;
+    padding: 0 0rem;
+    box-shadow:  0px 0px 6px #c1bebebc,
+             0px 0px 10px #ffffff;
+             border-radius: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.m-tutorial, .m-explore, .m-trend, .m-stats {
+    padding: 0 1.7rem !important;
+}
+.c-wallet {
+    background: var(--color-primary);
+    box-shadow: 3px 3px 10px rgba(88, 88, 255, 0.645);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    width: fit-content;
+    padding: 1rem 3rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.c-wallet:hover {
+    background: var(--color-primary-var);
+    padding: 1.05rem 3.05rem;
+}
+.m-navt {
+    font-size: 4rem;
+    margin: 0 0.5rem;
+}
+.fl-right {
+    text-align: right;
+    width: 100% !important;
+    font-size: 2rem !important;
+    float: right;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1200px) {
+    header .left .main-w {
+        font-size: 2.7rem;
+    }
+    header .left .sub-w {
+        font-size: 1.5rem;
+    }
+    header .left {
+        width: 53%;
+    }
+    header .right {
+        width: 44%;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    .header-container {
+        display: block;
+        text-align: center;
+        padding: 1.7rem 0;
+    }
+    header .left {
+        margin: 0 auto;
+        width: 70%;
+    }
+    header .right {
+        width: 70%;
+        margin: 4rem auto;
+    }
+    header .left .main-w {
+        margin: 0rem auto 2rem auto;
+    }
+    header .left .sub-w {
+        margin: 0rem auto;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 768px) {
+    header .left {
+        width: 95%;
+    }
+    header .right {
+        width: 95%;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 600px) {
+    header .left {
+        width: 92%;
+    }
+    header .right {
+        width: 95%;
+        margin-top: 2.3rem;
+    }
+    header .left .main-w {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        margin-bottom: 1.7rem;
+    }
+    header .left .sub-w {
+        width: 100%;
+        font-size: 1.3rem;
+    } 
+    header .left .explore {
+        font-size: 1.2rem;
+    }
+    header .left .create {
+        font-size: 1.2rem;
+    }
+}
