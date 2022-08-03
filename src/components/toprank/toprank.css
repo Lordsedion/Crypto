@@ -1,0 +1,39 @@
+#toprank {
+    padding: 1rem 2rem;
+    margin: 3rem 5rem;
+}
+.toprank-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-darker);
+    margin-bottom: 2rem;
+}
+.toprank-title span {
+    color: var(--color-primary-var);
+}
+.rank-p-pic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.tp-rk-ct-item {
+    background: rgb(86, 86, 252);
+    width: 30%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: row;
+}
+.item-tp-details{
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+}
+.tp-l-left {
+    margin: 1rem;
+}
+.tp-l-right {
+    margin: 1rem;
+    text-align: right;
+}
