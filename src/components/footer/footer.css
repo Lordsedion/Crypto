@@ -1,0 +1,129 @@
+#footer {
+    background: var(--color-primary);
+    padding: 3rem 3rem 1rem 3rem;
+    color: #fff;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+}
+.footer-left {
+    width: 35%;
+}
+.footer-left img {
+    width: 10rem;
+}
+.footer-right {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    align-items: center;
+    width: 65%;
+}
+.footer-logo {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    width: fit-content;
+    font-weight: 500;
+}
+.footer-logo:hover {
+    font-weight: 600;
+}
+.footer-text {
+    width: 90%;
+    text-align: justify;
+}
+.right-sec-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right-sec-content {
+    font-weight: 500;
+    color: rgb(239, 238, 238);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.right-sec-content:hover {
+    color: #fff;
+    transform: scale(1.07);
+}
+.footer-last {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-others {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-others div {
+    margin: 0 1rem;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    #footer {
+        padding: 2rem;
+    }
+    .footer-container {
+        display: block;
+    }
+    .footer-left {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-right {
+        width: 100%;
+    }
+    .footer-left img {
+        display: none;
+    }
+    .footer-logo {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-last {
+        display: block;
+    }
+    .footer-last div {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer-others {
+        text-align: center;
+        display: block;
+    }
+    .copyright-f {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 600px) {
+    .footer-right {
+        flex-wrap: wrap;
+    }
+    #footer {
+        padding: 2rem 0 0.2rem 0 ;
+    }
+    .right-sec {
+        margin: 0 1rem;
+    }
+    .footer-right {
+        margin-top: 2rem;
+    }
+}

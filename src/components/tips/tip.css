@@ -1,0 +1,70 @@
+#tip {
+    text-align: center;
+    margin: 2rem 1rem;
+    padding: 2rem;
+}
+
+.tip-title {
+    font-size: 2rem;
+    color: var(--color-darker);
+    margin: 1rem 0;
+}
+
+.tip-container {
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.tip-box {
+    width: 33%;
+    margin: 2rem;
+}
+
+.tip-icon img {
+    width: 30%;
+    border-radius: 0.4rem;
+}
+
+.tip-box-title {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.tip-info {
+    color: var(--color-dark);
+    text-align: left;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    #tip {
+        margin: 2rem 0;
+        padding: 2rem 0;
+    }
+    .tip-container {
+        width: 97%;
+    }
+    .tip-box {
+        margin: 2rem 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .tip-container {
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+    }
+    .tip-box {
+        width: 88%;
+    }
+    .tip-info {
+        text-align: center;
+    }
+    .tip-title {
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+}

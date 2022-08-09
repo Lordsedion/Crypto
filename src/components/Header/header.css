@@ -3,6 +3,8 @@
     padding: 3rem 4rem 3rem 2rem;
     justify-content: flex-end;
     display: flex;
+    align-items: center;
+    position: relative;
     margin-top: 3rem;
 }
 header .left {
@@ -102,15 +104,21 @@ header .right .image-container .header-main-img {
 
 #mobile-menu {
     display: none;
-    height: 100vh;
+    overflow: auto;
+    min-height: 100vh;
     position: fixed;
-    overflow: hidden;
+    bottom:0%;
+    left:0%;
+    right:0%;
     padding: 2rem 0.7rem;
     z-index: 10;
     background: #fff;
-    margin-bottom: 100vh;
     margin-top: -1rem;
     width: 100vw;
+}
+.m-up {
+    height: 100%;
+    overflow: auto;
 }
 .m-up > div {
     width: 96%;
@@ -130,16 +138,16 @@ header .right .image-container .header-main-img {
 .c-wallet {
     background: var(--color-primary);
     box-shadow: 3px 3px 10px rgba(88, 88, 255, 0.645);
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 1.1rem;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 80%;
     width: fit-content;
     padding: 1rem 3rem;
     color: #fff;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: var(--transition);

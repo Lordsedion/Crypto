@@ -7,7 +7,9 @@
 }
 .toprank-title {
     text-align: center;
+    margin-left: auto;
     font-size: 1.8rem;
+    width: 97%;
     font-weight: 500;
     color: var(--color-darker);
     margin-bottom: 2rem;
@@ -23,7 +25,7 @@
     display: inline-block;
     width: 20%;
     position: absolute;
-    top: 10%;
+    margin-top: 2rem;
     height: fit-content;
     overflow: auto;
     border-radius: 0.6rem;
@@ -146,18 +148,44 @@ font-family: 'Open Sans', sans-serif;
     }
     #toprank {
         margin-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .toprank-chart-ranking {
         display: none;
     }
     .toprank-chart-ranking-mobile {
         display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
+    }
+    .show-more {
+        width: fit-content;
+        padding: 0.7rem 1rem;
     }
 }
 @media screen and (max-width: 768px) {
+    .toprank-range-dropdown {
+        width: 30%;
+        left: 50%;
+        transform: translateX(50%);
+    }
+    .toprank-range-dropdown small{
+        font-size: 1rem;
+        color: var(--color-darker);
+    }
+}
+@media screen and (max-width: 600px) {
+    .toprank-chart-ranking-mobile {
+        display: block;
+    }
+    .toprank-title {
+        font-size: 1.3rem;
+    }
     .show-more {
-        width: fit-content;
-        padding: 1rem 2rem;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    #toprank {
+        margin: 1rem 0;
     }
 }

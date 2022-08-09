@@ -17,6 +17,12 @@ function removeMobileMenu() {
     document.querySelector('#ham-cancel').style.display = 'none'
     document.querySelector('#hamburger').style.display = 'block'
 }
+function show_search() {
+    document.getElementById('m-sr').style.display = 'flex'
+}
+function r_search() {
+    document.getElementById('m-sr').style.display = 'none'
+}
 
 class Nav extends React.Component {
     render() {
@@ -42,7 +48,11 @@ class Nav extends React.Component {
                     </div>
 
                     <div className="icons-right">
-                        <BiSearchAlt2 className='r-icons' id='mb-search'/>
+                        <BiSearchAlt2 className='r-icons' id='mb-search' onClick={() => show_search()}/>
+                        <form action="" id='m-sr'>
+                            <input type="search" name="search" id="mb-srh-in" placeholder='Search items, collections, and profiles'/>
+                           <div className="cancel-ss" onClick={() => r_search()}>&#9587;</div>
+                        </form>
                         <BiUserCircle className='r-icons tb-c'/>
                         <FaWallet className='r-icons tb-c'/>
                         <FiMenu className='r-icons hamburger' id='hamburger' onClick={()=> showMobileMenu()}/>

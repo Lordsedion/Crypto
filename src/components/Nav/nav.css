@@ -20,6 +20,9 @@ nav .left {
     width: 40%;
     align-items: center;
 }
+nav .left h2 {
+    color: var(--color-primary);
+}
 nav .left img {
     width: 3.3rem;
     height: 3.3rem;
@@ -39,6 +42,19 @@ nav .left form input {
     padding: 0.75rem ;
     margin: 0;
     font-size: 0.9rem;
+}
+#mb-srh-in {
+    border: 1.6px solid rgba(124, 121, 121, 0.165);
+    padding: 5%;
+    border-radius: 0.2rem;
+}
+#m-sr {
+    display: none;
+}
+.cancel-ss {
+    font-weight: 900;
+    font-size: 1.35rem;
+    padding: 0.3rem;
 }
 nav .left form .input .input-search {
     font-size: 1.3rem;

@@ -1,6 +1,6 @@
 import React from 'react'
 import './maintrend.css'
-import alex from '../../Images/alex.jpg'
+import alex from '../../Images/alex.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
